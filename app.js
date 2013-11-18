@@ -50,9 +50,7 @@ app.configure('development', function(){
 app.configure('production', function(){
   app.use(express.errorHandler()); 
 });
-
-// db connection
-mongoose.connect('mongodb://localhost/test');
+  
 
 // Routes
 

@@ -8,7 +8,7 @@ function Moment(tableStorageHelper, options){
 	this.super_.apply(this, ext_arg);
 }
 
-util.inherits(Moment, tableStorageHelper)
+util.inherits(Moment, tableStorageHelper);
 // refactor as mixins?
 
 
