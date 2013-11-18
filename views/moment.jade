@@ -1,0 +1,15 @@
+extends layout
+
+block mainContent
+  h1 Edgar's timeline
+  div.timeline-item
+    div= data
+    div.date-time= data.datetime
+    header.title= Something
+    div.subtitle= data.subtitle
+    div.content= data.content
+    button.edit-timeline-item Edit
+  script.
+    $(function () {
+      $('.create-timeline-item').on('click', function() { alert('click'); });
+    });

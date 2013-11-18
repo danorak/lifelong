@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "version": "0.0.1",
+  "homepage": "https://github.com/danorak/lifelong",
+  "authors": [
+    "danorak <danjones2000@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

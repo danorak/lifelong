@@ -1,0 +1,26 @@
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/metro.css')
+		script(type='text/javascript', src='/js/vendor/jquery-1.7.1.js')
+		script(type='text/javascript', src='/js/jquery.metro.js')
+		script(type='text/javascript', src='/js/bootstrap.js')
+	body
+		div.navbar.navbar-inverse.navbar-upper
+			div.navbar-inner
+				a.navbar-brand.pull-left Timeline
+				div.nav.centred-brand
+					span Edgar David Cartwright-Jones
+				ul.nav.pull-right
+					li 
+						a(href='#') Logged-in user
+		div.navbar
+			div.navbar-inner
+				ul.nav
+					li
+						a(href='#') Command menu items
+		div.container
+			div.row
+				div.col-lg-12
+					block mainContent

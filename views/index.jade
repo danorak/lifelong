@@ -1,0 +1,39 @@
+extends layout
+
+block mainContent
+  h1 Edgar's timeline
+  div.metro-pivot
+    div.pivot-item
+      h3 Moments 
+      p All the wonderful little things Edgar does
+      a.create-timeline-item(href='/create') New moment
+      each item in data
+          div.page-content-block
+            div.timeline-item
+              div= item.id
+              div.date-time= item.datetime
+              header.title= item.header
+              div.subtitle= item.subtitle
+              div.content= item.content
+              button.edit-timeline-item Edit
+    div.pivot-item
+      h3 Milestones
+      p First smile, first laugh, first step
+  script.
+    var defaults = {
+      animationDuration: 350,
+      headerOpacity: 0.25,
+      fixedHeaders: false,
+      headerSelector: function (item) { return item.children("h3").first(); },
+      itemSelector: function (item) { return item.children(".pivot-item"); },
+      headerItemTemplate: function () { return $("<span class='header' />"); },
+      pivotItemTemplate: function () { return $("<div class='pivotItem' />"); },
+      itemsTemplate: function () { return $("<div class='items' />"); },
+      headersTemplate: function () { return $("<div class='headers' />"); },
+      controlInitialized: undefined,
+      selectedItemChanged: undefined
+    };
+    $(function () {
+      $("div.metro-pivot").metroPivot(defaults);
+      //- $('.create-timeline-item').on('click', function() { return;  });
+    });

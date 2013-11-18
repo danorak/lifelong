@@ -1,0 +1,11 @@
+extends layout
+
+block mainContent
+  h1 Edgar's timeline
+  form(action='/create',method='post')
+    div(data-role='fieldcontain')
+      fieldset(data-role='controlgroup')
+        label(for='title') title
+          input(id='title', type='text', value='My title', name='title')
+    div(data-role='fieldcontain')
+      input(type='submit',value='Add')

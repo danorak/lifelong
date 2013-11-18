@@ -1,0 +1,27 @@
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/metro.css')
+		script(type='text/javascript', src='/js/vendor/jquery-1.7.1.js')
+		script(type='text/javascript', src='/js/jquery.metro.js')
+		script(type='text/javascript', src='/js/bootstrap.js')
+	body
+		div#topnav.navbar.navbar-inverse.navbar-first
+			div.navbar-inner
+				a.navbar-brand.pull-left Timeline
+				div.nav.centred-brand
+					a Edgar's timeline
+				ul.nav.pull-right
+					li 
+						a(href='#') Other
+		div.navbar
+			div.navbar-inner
+				div.container-fluid
+					ul.nav
+						li
+							a(href='#') Something
+		div.container
+			div.row
+				div.col-lg-12
+					block mainContent
