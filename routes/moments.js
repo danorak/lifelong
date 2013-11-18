@@ -16,18 +16,6 @@ var moments = [
   }
 ];
 
-function Moments(){
-
-}
-
-Moments.prototype = {
-  select: function(){},
-  update: function(){},
-  insert: function(){},
-  delete: function(){}
-}
-
-module.exports = Moments;
 
 function lookup(id){
   for(var i=-1, l = moments.length;++i<l;){
