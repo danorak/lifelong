@@ -8,6 +8,7 @@ function TableStorageHelper(tableName){
 	// 
 	this.partitionKey = '';
 	this.tableName = tableName;
+	
 }
 
 TableStorageHelper.prototype.get = function(args){}
